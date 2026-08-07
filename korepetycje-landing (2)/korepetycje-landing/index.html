@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Matematyka bez schematów — Korepetycje maturalne z AI</title>
 <meta name="description" content="Zdalne przygotowanie do matury z matematyki — poziom podstawowy i rozszerzony. Weronika Zacłona i Mikołaj Szmid, studenci AGH, 100% z matematyki na maturze." />
+<meta name="theme-color" content="#F8FAFC" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +16,6 @@
 </head>
 <body>
 
-<!-- Ambient cursor glow -->
-<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-
 <!-- NAVIGATION -->
 <header class="nav" id="nav">
   <div class="nav__inner container">
@@ -26,11 +24,12 @@
       <span class="nav__brand-text">korepetycje<span class="accent">.</span></span>
     </a>
     <nav class="nav__links" aria-label="Nawigacja główna">
+      <a href="#oferta">Oferta</a>
       <a href="#onas">O nas</a>
       <a href="#promptbook">Prompt Book</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
-    <a href="#kontakt" class="btn btn--ghost nav__cta">Zapisz się</a>
+    <a href="#kontakt" class="btn btn--primary nav__cta" data-scroll="#kontakt">Zapisz się</a>
   </div>
 </header>
 
@@ -38,57 +37,111 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero__bg" aria-hidden="true">
-      <div class="hero__grid"></div>
-      <div class="hero__orb hero__orb--1"></div>
-      <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__backdrop" aria-hidden="true">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__dots"></div>
     </div>
 
-    <div class="container hero__inner">
-      <span class="badge reveal">
-        <i data-lucide="sparkles"></i>
-         Skuteczna nauka • Indywidualne podejście • Lepsze wyniki
-      </span>
+    <div class="container hero__layout">
 
-      <h1 class="hero__title reveal">
-         Zrozum matematykę.<br>
-        <span class="accent-gradient">Korepetycje dopasowane do Twoich potrzeb.</span>
-      </h1>
+      <div class="hero__content">
+        <span class="badge reveal">
+          <i data-lucide="sparkles"></i>
+           Skuteczna nauka • Indywidualne podejście • Lepsze wyniki
+        </span>
 
-      <p class="hero__subtitle reveal">
-         Zdalne przygotowanie do matury z matematyki na poziomie podstawowym oraz rozszerzonym.
-         Pokażemy Ci, jak uczyć się skutecznie i świadomie korzystać z nowoczesnych technologii.
-      </p>
+        <h1 class="hero__title reveal">
+           Zrozum matematykę.<br>
+          <span class="accent-gradient">Korepetycje dopasowane do Twoich potrzeb.</span>
+        </h1>
 
-      <div class="hero__actions reveal">
-        <a href="#kontakt" class="btn btn--primary" data-scroll="#kontakt">
-          Dołącz do nas
-          <i data-lucide="arrow-right"></i>
-        </a>
-        <a href="#onas" class="btn btn--outline" data-scroll="#onas">Poznaj korepetytorów</a>
+        <p class="hero__subtitle reveal">
+           Zdalne przygotowanie do matury z matematyki na poziomie podstawowym oraz rozszerzonym.
+           Pokażemy Ci, jak uczyć się skutecznie i świadomie korzystać z nowoczesnych technologii.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#kontakt" class="btn btn--primary" data-scroll="#kontakt">
+            Dołącz do nas
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#onas" class="btn btn--outline" data-scroll="#onas">Poznaj korepetytorów</a>
+        </div>
+
+        <div class="hero__proof reveal">
+          <div class="proof__item">
+            <span class="proof__num">1:1</span>
+            <span class="proof__label">indywidualne zajęcia</span>
+          </div>
+          <div class="proof__divider" aria-hidden="true"></div>
+          <div class="proof__item">
+            <span class="proof__num">P + R</span>
+            <span class="proof__label">poziom podstawowy i rozszerzony</span>
+          </div>
+          <div class="proof__divider" aria-hidden="true"></div>
+          <div class="proof__item">
+            <span class="proof__num">ONLINE</span>
+            <span class="proof__label">uczysz się, skąd chcesz</span>
+          </div>
+        </div>
       </div>
 
-      <div class="hero__proof reveal">
-        <div class="proof__item">
-          <span class="proof__num">1:1</span>
-          <span class="proof__label">indywidualne zajęcia</span>
+      <div class="hero__visual reveal">
+        <div class="hero__visual-frame">
+          <img src="assets/hero.png" alt="Zdalne korepetycje z matematyki — nauka online" class="hero__visual-photo" />
         </div>
-        <div class="proof__divider" aria-hidden="true"></div>
-        <div class="proof__item">
-          <span class="proof__num">P + R</span>
-          <span class="proof__label">poziom podstawowy i rozszerzony</span>
+
+        <div class="hero__badge hero__badge--check" aria-hidden="true">
+          <span class="hero__badge-icon"><i data-lucide="check"></i></span>
+          <span class="hero__badge-lines">
+            <span></span>
+            <span></span>
+          </span>
         </div>
-        <div class="proof__divider" aria-hidden="true"></div>
-        <div class="proof__item">
-          <span class="proof__num">ONLINE</span>
-          <span class="proof__label">uczysz się, skąd chcesz</span>
-        </div>
+
+        <div class="hero__badge hero__badge--sigma" aria-hidden="true">∑</div>
       </div>
+
     </div>
 
-    <a href="#onas" class="scroll-cue" data-scroll="#onas" aria-label="Przewiń w dół">
+    <a href="#oferta" class="scroll-cue" data-scroll="#oferta" aria-label="Przewiń w dół">
       <i data-lucide="chevron-down"></i>
     </a>
+  </section>
+
+  <!-- OFERTA / CZEGO UCZYMY -->
+  <section class="offer" id="oferta">
+    <div class="container">
+      <div class="offer__intro">
+        <span class="eyebrow">Zakres wsparcia</span>
+        <h2 class="section-title">Czego uczymy</h2>
+        <p class="section-lead">
+          Dopasowujemy zakres zajęć do Twoich potrzeb — niezależnie od tego, czy zaczynasz naukę
+          od podstaw, czy szlifujesz zadania maturalne na poziomie rozszerzonym.
+        </p>
+      </div>
+
+      <div class="offer__grid">
+        <article class="offer-card">
+          <span class="offer-card__icon"><i data-lucide="sigma"></i></span>
+          <h3>Matematyka — podstawa i rozszerzenie</h3>
+          <p>Zajęcia dla liceum i technikum, od funkcji liniowych po rachunek pochodnych — dopasowane do Twojego poziomu.</p>
+        </article>
+
+        <article class="offer-card">
+          <span class="offer-card__icon"><i data-lucide="graduation-cap"></i></span>
+          <h3>Przygotowanie do matury</h3>
+          <p>Zadania i strategie zgodne z najnowszymi wymaganiami CKE — ćwiczymy typowe schematy i pułapki egzaminacyjne.</p>
+        </article>
+
+        <article class="offer-card">
+          <span class="offer-card__icon"><i data-lucide="list-checks"></i></span>
+          <h3>Kartkówki i nadrabianie zaległości</h3>
+          <p>Szybkie wsparcie przed sprawdzianem oraz uzupełnianie braków z bieżącego materiału szkolnego.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
   <!-- O NAS — SPLIT SCREEN -->
@@ -98,7 +151,6 @@
       <h2 class="section-title">Poznaj nas</h2>
       <p class="section-lead">
         Poznaliśmy się w klasie matematyczno-fizycznej, a dziś studiujemy Informatykę i Ekonometrię na AGH. Oboje od lat interesujemy się matematyką i lubimy pokazywać, że nie musi sprowadzać się do zapamiętywania wzorów i schematów. Na zajęciach stawiamy na zrozumienie, logiczne myślenie i spokojne przejście przez nawet trudniejsze tematy.
-
       </p>
     </div>
 
@@ -114,9 +166,9 @@
           <span class="profile__tag">Korepetytorka</span>
           <h3 class="profile__name">Weronika Zacłona</h3>
           <p class="profile__desc">
-            Studiuję Informatykę i Ekonometrię na AGH, a matematyka od lat jest jednym z moich głównych zainteresowań. 
-            Jestem finalistką Olimpiady Ekonomicznej, działam naukowo i na co dzień łączę matematykę z analizą danych 
-            oraz programowaniem. Na zajęciach zależy mi przede wszystkim na tym, żeby uczeń naprawdę zrozumiał temat i 
+            Studiuję Informatykę i Ekonometrię na AGH, a matematyka od lat jest jednym z moich głównych zainteresowań.
+            Jestem finalistką Olimpiady Ekonomicznej, działam naukowo i na co dzień łączę matematykę z analizą danych
+            oraz programowaniem. Na zajęciach zależy mi przede wszystkim na tym, żeby uczeń naprawdę zrozumiał temat i
             nabrał pewności w rozwiązywaniu zadań.
           </p>
           <ul class="profile__contacts">
@@ -150,8 +202,8 @@
           <p class="profile__desc">
             Studiuję Informatykę i Ekonometrię na AGH, a matematykę lubię przede wszystkim za jej praktyczne zastosowania.
              Interesuję się automatyzacją zadań i szukaniem prostszych sposobów rozwiązywania problemów.
-              Poza nauką dużo czasu poświęcam sportowi i regularnie trenuję na siłowni. 
-              Na zajęciach staram się pokazywać matematykę logicznie, 
+              Poza nauką dużo czasu poświęcam sportowi i regularnie trenuję na siłowni.
+              Na zajęciach staram się pokazywać matematykę logicznie,
             konkretnie i bez niepotrzebnego komplikowania.
           </p>
           <ul class="profile__contacts">
@@ -222,6 +274,7 @@
         <div class="terminal">
           <div class="terminal__bar">
             <span></span><span></span><span></span>
+            <span class="terminal__bar-label">asystent-ai</span>
           </div>
           <div class="terminal__body">
             <p><span class="t-prompt">&gt;</span> wyjaśnij strukturę zadania 14, poziom rozszerzony</p>
@@ -235,179 +288,178 @@
   </section>
 
   <!-- KONTAKT -->
-  <!-- KONTAKT -->
-<section class="contact" id="kontakt">
-  <div class="container contact__inner">
+  <section class="contact" id="kontakt">
+    <div class="container contact__inner">
 
-    <div class="contact__intro">
-      <span class="eyebrow">Kontakt</span>
+      <div class="contact__intro">
+        <span class="eyebrow">Kontakt</span>
 
-      <h2 class="section-title">
-        Napisz do nas
-      </h2>
+        <h2 class="section-title">
+          Napisz do nas
+        </h2>
 
-      <p class="section-lead">
-        Napisz, do jakiej matury się przygotowujesz, na jakim jesteś poziomie
-        i w czym możemy Ci pomóc. Odezwiemy się do Ciebie i ustalimy szczegóły pierwszego spotkania.
-      </p>
+        <p class="section-lead">
+          Napisz, do jakiej matury się przygotowujesz, na jakim jesteś poziomie
+          i w czym możemy Ci pomóc. Odezwiemy się do Ciebie i ustalimy szczegóły pierwszego spotkania.
+        </p>
 
-      <div class="contact__direct">
+        <div class="contact__direct">
 
-        <div class="contact__direct-item">
-          <span>Weronika</span>
-          <a href="tel:+48534783798">
-            +48 534 783 798
-          </a>
-          <a href="mailto:werkazaclona@gmail.com">
-            werkazaclona@gmail.com
-          </a>
+          <div class="contact__direct-item">
+            <span>Weronika</span>
+            <a href="tel:+48534783798">
+              +48 534 783 798
+            </a>
+            <a href="mailto:werkazaclona@gmail.com">
+              werkazaclona@gmail.com
+            </a>
+          </div>
+
+          <div class="contact__direct-item">
+            <span>Mikołaj</span>
+            <a href="tel:+48730285150">
+              +48 730 285 150
+            </a>
+            <a href="mailto:mikolajszmid@gmail.com">
+              mikolajszmid@gmail.com
+            </a>
+          </div>
+
         </div>
-
-        <div class="contact__direct-item">
-          <span>Mikołaj</span>
-          <a href="tel:+48730285150">
-            +48 730 285 150
-          </a>
-          <a href="mailto:mikolajszmid@gmail.com">
-            mikolajszmid@gmail.com
-          </a>
-        </div>
-
-      </div>
-    </div>
-
-
-    <form
-      class="contact-form"
-      id="contactForm"
-      action="https://formsubmit.co/werkazaclona@gmail.com"
-      method="POST"
-      novalidate
-    >
-
-      <!-- Ustawienia wysyłania -->
-      <input
-        type="hidden"
-        name="_subject"
-        value="Nowe zgłoszenie na korepetycje"
-      />
-
-      <input
-        type="hidden"
-        name="_cc"
-        value="mikolajszmid@gmail.com"
-      />
-
-      <input
-        type="hidden"
-        name="_template"
-        value="table"
-      />
-
-
-      <!-- IMIĘ + TELEFON -->
-      <div class="field-row">
-
-        <div class="field">
-          <label for="name">Imię</label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Jak masz na imię?"
-            autocomplete="given-name"
-            required
-          />
-
-          <span
-            class="field-error"
-            data-error-for="name"
-          ></span>
-        </div>
-
-
-        <div class="field">
-          <label for="phone">Telefon</label>
-
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+48 000 000 000"
-            autocomplete="tel"
-            required
-          />
-
-          <span
-            class="field-error"
-            data-error-for="phone"
-          ></span>
-        </div>
-
       </div>
 
 
-      <!-- EMAIL -->
-      <div class="field">
-        <label for="email">E-mail</label>
+      <form
+        class="contact-form"
+        id="contactForm"
+        action="https://formsubmit.co/werkazaclona@gmail.com"
+        method="POST"
+        novalidate
+      >
 
+        <!-- Ustawienia wysyłania -->
         <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="ty@przyklad.pl"
-          autocomplete="email"
-          required
+          type="hidden"
+          name="_subject"
+          value="Nowe zgłoszenie na korepetycje"
         />
 
-        <span
-          class="field-error"
-          data-error-for="email"
-        ></span>
-      </div>
+        <input
+          type="hidden"
+          name="_cc"
+          value="mikolajszmid@gmail.com"
+        />
+
+        <input
+          type="hidden"
+          name="_template"
+          value="table"
+        />
 
 
-      <!-- WIADOMOŚĆ -->
-      <div class="field">
-        <label for="message">Wiadomość</label>
+        <!-- IMIĘ + TELEFON -->
+        <div class="field-row">
 
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="Napisz, do jakiej matury się przygotowujesz, jaki jest Twój poziom i w czym możemy Ci pomóc."
-          required
-        ></textarea>
+          <div class="field">
+            <label for="name">Imię</label>
 
-        <span
-          class="field-error"
-          data-error-for="message"
-        ></span>
-      </div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jak masz na imię?"
+              autocomplete="given-name"
+              required
+            />
 
-
-      <!-- PRZYCISK -->
-      <button
-        type="submit"
-        class="btn btn--primary btn--block"
-      >
-        <span class="btn-label">
-          Wyślij wiadomość
-        </span>
-
-        <i data-lucide="send"></i>
-      </button>
+            <span
+              class="field-error"
+              data-error-for="name"
+            ></span>
+          </div>
 
 
-      <p class="form-note">
-        Odpowiadamy zwykle w ciągu 24 godzin.
-      </p>
+          <div class="field">
+            <label for="phone">Telefon</label>
 
-    </form>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+48 000 000 000"
+              autocomplete="tel"
+              required
+            />
 
-  </div>
-</section>
+            <span
+              class="field-error"
+              data-error-for="phone"
+            ></span>
+          </div>
+
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="field">
+          <label for="email">E-mail</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ty@przyklad.pl"
+            autocomplete="email"
+            required
+          />
+
+          <span
+            class="field-error"
+            data-error-for="email"
+          ></span>
+        </div>
+
+
+        <!-- WIADOMOŚĆ -->
+        <div class="field">
+          <label for="message">Wiadomość</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Napisz, do jakiej matury się przygotowujesz, jaki jest Twój poziom i w czym możemy Ci pomóc."
+            required
+          ></textarea>
+
+          <span
+            class="field-error"
+            data-error-for="message"
+          ></span>
+        </div>
+
+
+        <!-- PRZYCISK -->
+        <button
+          type="submit"
+          class="btn btn--primary btn--block"
+        >
+          <span class="btn-label">
+            Wyślij wiadomość
+          </span>
+
+          <i data-lucide="send"></i>
+        </button>
+
+
+        <p class="form-note">
+          Odpowiadamy zwykle w ciągu 24 godzin.
+        </p>
+
+      </form>
+
+    </div>
+  </section>
 
 </main>
 

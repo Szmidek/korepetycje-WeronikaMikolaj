@@ -81,56 +81,10 @@
 
 
   /* ---------------------------------------------------------
-     Ambient cursor glow
-  --------------------------------------------------------- */
-  var cursorGlow = document.getElementById("cursorGlow");
-  var glowActive = false;
-
-  var reduceMotion =
-    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  if (
-    cursorGlow &&
-    !reduceMotion &&
-    window.matchMedia("(pointer: fine)").matches
-  ) {
-
-    window.addEventListener(
-      "mousemove",
-      function (e) {
-
-        cursorGlow.style.transform =
-          "translate(" +
-          e.clientX +
-          "px, " +
-          e.clientY +
-          "px) translate(-50%, -50%)";
-
-        if (!glowActive) {
-          cursorGlow.classList.add("is-active");
-          glowActive = true;
-        }
-
-      },
-      {
-        passive: true
-      }
-    );
-
-    document.addEventListener("mouseleave", function () {
-
-      cursorGlow.classList.remove("is-active");
-      glowActive = false;
-
-    });
-  }
-
-
-  /* ---------------------------------------------------------
      Scroll reveal for sections
   --------------------------------------------------------- */
   var revealTargets = document.querySelectorAll(
-    ".team__intro, .profile, .promptbook__copy, .promptbook__visual, .contact__intro, .contact-form"
+    ".offer__intro, .offer-card, .team__intro, .profile, .promptbook__copy, .promptbook__visual, .contact__intro, .contact-form"
   );
 
   revealTargets.forEach(function (el) {
