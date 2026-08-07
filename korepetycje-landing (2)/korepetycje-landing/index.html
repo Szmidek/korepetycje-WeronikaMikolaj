@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Matematyka bez schematów — Korepetycje maturalne z AI</title>
+<meta name="description" content="Zdalne przygotowanie do matury z matematyki — poziom podstawowy i rozszerzony. Weronika Zacłona i Mikołaj Szmid, studenci AGH, 100% z matematyki na maturze." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Ambient cursor glow -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="#top" class="nav__brand">
+      <span class="nav__mark">∑</span>
+      <span class="nav__brand-text">struktura<span class="accent">.ai</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Nawigacja główna">
+      <a href="#onas">O nas</a>
+      <a href="#promptbook">Prompt Book</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a href="#kontakt" class="btn btn--ghost nav__cta">Zapisz się</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <span class="badge reveal">
+        <i data-lucide="sparkles"></i>
+        Twórcy Prompt Booka AI • Poznaj jak efektywnie odnaleźć się w świecie AI i&nbsp;nauki
+      </span>
+
+      <h1 class="hero__title reveal">
+        Matematyka bez schematów.<br>
+        <span class="accent-gradient">Logika w erze Sztucznej Inteligencji.</span>
+      </h1>
+
+      <p class="hero__subtitle reveal">
+        Zdalne przygotowanie do matury z matematyki — poziom podstawowy oraz rozszerzony.
+        Pokażemy Ci, jak łączyć tradycyjną logikę z nowoczesnymi narzędziami AI.
+      </p>
+
+      <div class="hero__actions reveal">
+        <a href="#kontakt" class="btn btn--primary" data-scroll="#kontakt">
+          Dołącz do nas
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <a href="#onas" class="btn btn--outline" data-scroll="#onas">Poznaj korepetytorów</a>
+      </div>
+
+      <div class="hero__proof reveal">
+        <div class="proof__item">
+          <span class="proof__num">100%</span>
+          <span class="proof__label">wynik z matury z&nbsp;matematyki</span>
+        </div>
+        <div class="proof__divider" aria-hidden="true"></div>
+        <div class="proof__item">
+          <span class="proof__num">AGH</span>
+          <span class="proof__label">Informatyka i&nbsp;Ekonometria, III&nbsp;rok</span>
+        </div>
+        <div class="proof__divider" aria-hidden="true"></div>
+        <div class="proof__item">
+          <span class="proof__num">2</span>
+          <span class="proof__label">korepetytorów, jedna metoda</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#onas" class="scroll-cue" data-scroll="#onas" aria-label="Przewiń w dół">
+      <i data-lucide="chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- O NAS — SPLIT SCREEN -->
+  <section class="team" id="onas">
+    <div class="team__intro container">
+      <span class="eyebrow">O nas</span>
+      <h2 class="section-title">Ten sam fundament. Dwie drogi nauczania.</h2>
+      <p class="section-lead">
+        Poznaliśmy się w klasie o profilu matematyczno-fizycznym. Oboje zdaliśmy maturę
+        z matematyki na 100% i dziś studiujemy Informatykę i Ekonometrię na trzecim roku AGH.
+        Uczymy tak, jak sami chcielibyśmy być uczeni — ze zrozumieniem struktury, nie na pamięć.
+      </p>
+    </div>
+
+    <div class="team__split">
+
+      <!-- WERONIKA -->
+      <article class="profile profile--weronika">
+        <div class="profile__media">
+          <img src="assets/weronika.svg" alt="Weronika Zacłona — korepetytorka matematyki" loading="lazy" />
+          <div class="profile__media-frame" aria-hidden="true"></div>
+        </div>
+        <div class="profile__content">
+          <span class="profile__tag">Korepetytorka</span>
+          <h3 class="profile__name">Weronika Zacłona</h3>
+          <p class="profile__desc">
+            Absolwentka klasy matematyczno-fizycznej, maturę z matematyki zdała na 100%.
+            Studentka III roku Informatyki i Ekonometrii na AGH. W nauczaniu stawia na
+            spokojne, metodyczne budowanie zrozumienia — od podstaw, aż zadania przestają
+            być schematem do zapamiętania.
+          </p>
+          <ul class="profile__contacts">
+            <li>
+              <a href="tel:+48534783798" class="contact-link">
+                <i data-lucide="phone"></i>
+                <span>+48 534 783 798</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:werkazaclona@gmail.com" class="contact-link">
+                <i data-lucide="mail"></i>
+                <span>werkazaclona@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+          <button class="btn btn--copy" data-copy-name="Weronika Zacłona" data-copy-phone="+48 534 783 798" data-copy-email="werkazaclona@gmail.com" type="button">
+            <i data-lucide="copy"></i>
+            Kopiuj kontakt
+          </button>
+        </div>
+      </article>
+
+      <div class="team__seam" aria-hidden="true"></div>
+
+      <!-- MIKOŁAJ -->
+      <article class="profile profile--mikolaj">
+        <div class="profile__content">
+          <span class="profile__tag">Korepetytor</span>
+          <h3 class="profile__name">Mikołaj Szmid</h3>
+          <p class="profile__desc">
+            Absolwent klasy matematyczno-fizycznej, maturę z matematyki zdał na 100%.
+            Student III roku Informatyki i Ekonometrii na AGH. Uczy przez rozkładanie
+            zadań na czynniki pierwsze — pokazuje, skąd bierze się wzór, zanim każe go
+            stosować.
+          </p>
+          <ul class="profile__contacts">
+            <li>
+              <a href="tel:+48730285150" class="contact-link">
+                <i data-lucide="phone"></i>
+                <span>+48 730 285 150</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:mikolajszmid@gmail.com" class="contact-link">
+                <i data-lucide="mail"></i>
+                <span>mikolajszmid@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+          <button class="btn btn--copy" data-copy-name="Mikołaj Szmid" data-copy-phone="+48 730 285 150" data-copy-email="mikolajszmid@gmail.com" type="button">
+            <i data-lucide="copy"></i>
+            Kopiuj kontakt
+          </button>
+        </div>
+        <div class="profile__media">
+          <img src="assets/mikolaj.svg" alt="Mikołaj Szmid — korepetytor matematyki" loading="lazy" />
+          <div class="profile__media-frame" aria-hidden="true"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- AI / PROMPT BOOK -->
+  <section class="promptbook" id="promptbook">
+    <div class="container promptbook__inner">
+      <div class="promptbook__copy">
+        <span class="eyebrow">Prompt Book AI</span>
+        <h2 class="section-title">Sztuczna inteligencja to nowe narzędzie, nie ściąga.</h2>
+        <p class="section-lead">
+          Stworzyliśmy własny Prompt Book — zbiór sprawdzonych zapytań do modeli AI, które
+          pomagają zrozumieć zadanie, a nie tylko dostać gotowy wynik. Uczymy, jak zadawać
+          pytania, które prowadzą do myślenia, nie zastępują go.
+        </p>
+        <ul class="feature-list">
+          <li>
+            <i data-lucide="brain-circuit"></i>
+            <div>
+              <strong>Logika najpierw, narzędzie potem</strong>
+              <span>AI wspiera zrozumienie struktury zadania — nie zastępuje nauki rozumowania.</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="notebook-pen"></i>
+            <div>
+              <strong>Gotowe prompty maturalne</strong>
+              <span>Zestaw zapytań dopasowanych do typów zadań z arkuszy CKE.</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="target"></i>
+            <div>
+              <strong>Indywidualna ścieżka</strong>
+              <span>Plan nauki dopasowany do poziomu podstawowego lub rozszerzonego.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="promptbook__visual" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="terminal__body">
+            <p><span class="t-prompt">&gt;</span> wyjaśnij strukturę zadania 14, poziom rozszerzony</p>
+            <p class="t-out">Analizuję typ zadania: funkcja kwadratowa,<br>parametr m. Zaczynamy od wyróżnika Δ…</p>
+            <p><span class="t-prompt">&gt;</span> pokaż alternatywną metodę rozwiązania</p>
+            <p class="t-out t-out--cursor">Metoda geometryczna: analiza wierzchołka<span class="cursor-blink">▍</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="contact" id="kontakt">
+    <div class="container contact__inner">
+      <div class="contact__intro">
+        <span class="eyebrow">Kontakt</span>
+        <h2 class="section-title">Napisz, na jakim jesteś etapie.</h2>
+        <p class="section-lead">
+          Wybierz korepetytora, opisz poziom matury i cel — odpiszemy z propozycją
+          pierwszego, bezpłatnego spotkania organizacyjnego.
+        </p>
+
+        <div class="contact__direct">
+          <div class="contact__direct-item">
+            <span>Weronika</span>
+            <a href="tel:+48534783798">+48 534 783 798</a>
+            <a href="mailto:werkazaclona@gmail.com">werkazaclona@gmail.com</a>
+          </div>
+          <div class="contact__direct-item">
+            <span>Mikołaj</span>
+            <a href="tel:+48730285150">+48 730 285 150</a>
+            <a href="mailto:mikolajszmid@gmail.com">mikolajszmid@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field-group">
+          <span class="field-label">Wybierz korepetytora</span>
+          <div class="tutor-select" role="radiogroup" aria-label="Wybór korepetytora">
+            <button type="button" class="tutor-option is-active" data-value="Weronika" role="radio" aria-checked="true">Weronika</button>
+            <button type="button" class="tutor-option" data-value="Mikołaj" role="radio" aria-checked="false">Mikołaj</button>
+            <button type="button" class="tutor-option" data-value="Oboje" role="radio" aria-checked="false">Oboje</button>
+          </div>
+          <input type="hidden" name="tutor" id="tutorInput" value="Weronika" />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Imię</label>
+            <input type="text" id="name" name="name" placeholder="Jak masz na imię?" autocomplete="given-name" required />
+            <span class="field-error" data-error-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="phone">Telefon <span class="optional">(opcjonalnie)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+48 000 000 000" autocomplete="tel" />
+            <span class="field-error" data-error-for="phone"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="ty@przyklad.pl" autocomplete="email" required />
+          <span class="field-error" data-error-for="email"></span>
+        </div>
+
+        <div class="field">
+          <label for="message">Wiadomość / poziom matury</label>
+          <textarea id="message" name="message" rows="4" placeholder="Podstawowa czy rozszerzona? Od czego chcesz zacząć?" required></textarea>
+          <span class="field-error" data-error-for="message"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block">
+          <span class="btn-label">Wyślij zgłoszenie</span>
+          <i data-lucide="send"></i>
+        </button>
+
+        <p class="form-note">Odpowiadamy zwykle w ciągu 24 godzin.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© <span id="year"></span> Weronika Zacłona &amp; Mikołaj Szmid — korepetycje z matematyki</span>
+    <span class="footer__made">Struktura • Logika • AI</span>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <i data-lucide="check-circle-2"></i>
+  <span id="toastMessage">Skopiowano do schowka!</span>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

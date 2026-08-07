@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" role="img" aria-labelledby="mTitle">
+  <title id="mTitle">Mikołaj Szmid — miejsce na zdjęcie</title>
+  <defs>
+    <linearGradient id="mBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1a1c"/>
+      <stop offset="55%" stop-color="#0d0f13"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <radialGradient id="mGlow" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+    <pattern id="mGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="480" height="600" fill="url(#mBg)"/>
+  <rect width="480" height="600" fill="url(#mGrid)"/>
+  <circle cx="240" cy="190" r="220" fill="url(#mGlow)"/>
+
+  <!-- Abstract monogram figure -->
+  <circle cx="240" cy="230" r="72" fill="none" stroke="url(#mLine)" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path d="M140 430 C140 340 190 300 240 300 C290 300 340 340 340 430" fill="none" stroke="url(#mLine)" stroke-width="1.5" stroke-opacity="0.7"/>
+
+  <text x="240" y="245" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="54" font-weight="700" fill="#f2f1f5">M</text>
+
+  <text x="240" y="520" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" letter-spacing="2" fill="#6c6b76">MIKOŁAJ SZMID</text>
+  <text x="240" y="545" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1.5" fill="#4a4954">DODAJ ZDJĘCIE — MIKOLAJ.JPG</text>
+</svg>
